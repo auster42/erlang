@@ -8,7 +8,7 @@
 -behavior(gen_server).
 
 
-%% server
+%---server---
 host() ->
 	'ttt@tsu-00-31.utmn.ru'.
 
@@ -136,8 +136,8 @@ get_state(Board) ->
 					turn
 			end
 	end.
-%----------
 
+%---client and support---
 read_move() ->
 	case io:fread("Your turn: ", "~d~d") of
 		{ok, [R, C]} -> 
